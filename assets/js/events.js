@@ -20,6 +20,11 @@ var events_data = [
     }
 ];
 
-var template = $("#gkma_eventsTemplate").html();
-var html = Mustache.to_html(template, events_data);
-$("#gkma_eventsDisplay").html(html);
+var templateEl = $("#gkma_eventsTemplate");
+var displayEl = $("#gkma_eventsDisplay");
+
+if (templateEl.length && displayEl.length) {
+    var template = templateEl.html();
+    var html = Mustache.to_html(template, events_data);
+    displayEl.html(html);
+}
