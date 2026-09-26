@@ -99,3 +99,13 @@ class GKMAFooter extends HTMLElement {
 }
 
 customElements.define('gkma-footer', GKMAFooter);
+
+if (window.jQuery) {
+    jQuery(function () {
+        jQuery('.gkma_heroCarousel').carousel({
+            interval: 5000,
+            pause: false,
+            ride: 'carousel'
+        });
+    });
+}

@@ -28,3 +28,10 @@ var gallery_data = [
 var template = $("#gkma_galleryTemplate").html();
 var html = Mustache.to_html(template, gallery_data);
 $("#gkma_galleryDisplay").html(html);
+
+$(document).on('click', '.gallery-item', function () {
+    var imageUrl = $(this).data('image');
+    var imageAlt = $(this).data('alt');
+    $("#gkma_galleryLightboxImage").attr('src', imageUrl).attr('alt', imageAlt);
+    $(".gkmaGalleryModal").modal('show');
+});
