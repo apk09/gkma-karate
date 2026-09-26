@@ -12,7 +12,7 @@ var gallery_data = [
         alternate_name: "Gallery Image 3"
     },
     {
-        image: "gallery_image_4.jpg",
+        image: "gallery_image_4.JPG",
         alternate_name: "Gallery Image 4"
     },
     {
